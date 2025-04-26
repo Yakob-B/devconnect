@@ -1,0 +1,15 @@
+ # Global ignores
+node_modules/
+.env
+
+# For monorepo structure (client & server)
+client/node_modules/
+client/.env
+server/node_modules/
+server/.env
+
+# Optional
+.vscode/
+.DS_Store
+dist/
+build/
