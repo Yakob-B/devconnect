@@ -1,21 +1,23 @@
 
-import { useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
 
-
-function App() {
-  useEffect(() => {
-    fetch('http://localhost:5000/api/test')
-      .then(res => res.json())
-      .then(data => console.log(data));
-  }, []);
-
+const App = () => {
   return (
-    
-      <div>
-
-      </div>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/register" element={<div>Register Page</div>} />
+        <Route path="/login" element={<div>Login Page</div>} />
+        <Route path="/dashboard" element={<div>Dashboard Page</div>} />
+      </Routes>
+    </>
   );
-}
+};
 
 export default App;
+
+
 
