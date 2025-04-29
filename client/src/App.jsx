@@ -1,6 +1,7 @@
 
 import { useEffect } from 'react';
 
+
 function App() {
   useEffect(() => {
     fetch('http://localhost:5000/api/test')
@@ -9,9 +10,10 @@ function App() {
   }, []);
 
   return (
-    <div className="text-center text-2xl text-green-500 mt-10">
-      DevConnect Client is Running ✅
-    </div>
+    
+      <div>
+
+      </div>
   );
 }
 
